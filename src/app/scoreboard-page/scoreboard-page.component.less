@@ -1,0 +1,130 @@
+@mainDark: #1F2529;
+@mainWhite: white;
+@mainLight: #EAEAEA;
+@mainOrange: #E6523B;
+
+.left-content{
+    background-color: @mainDark;
+    width: 42%;
+    height: 100vh;
+    float: left;
+
+    .mesure-lines{
+        width: 49%;
+        height: 700px;
+        margin: 0 auto;
+        margin-top: 15vh;
+
+        .mesure-line{
+            width: calc(100% - 10px);
+            border-top: 1px solid @mainLight;
+            height: calc((100% / 19) - 1px);
+            font-size: 32px;
+            padding-left: 10px;
+            color: @mainLight;
+        }
+
+        .mesure-bar{
+            width: 50%;
+            background-color: @mainOrange;
+            position: relative;
+            //height and bottom has to be the same (done with js)
+            height: 0px;
+            bottom: 0px;
+            left: 25%;
+            
+            .mesure-bar-count{
+               width: 100%;
+               text-align: center;
+               height: 50px;
+               font-size: 35px;
+               line-height: 50px;
+               color: @mainLight;
+            }
+        }
+    }
+
+    .score-text{
+        width: 200px;
+        background-color: @mainLight;
+        margin: 0 auto;
+        margin-top: 50px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+.right-content{
+    background-color: @mainWhite;
+    width: 58%;
+    height: 100vh;
+    float: left;
+
+    .top-bar{
+        height: 180px;
+        background-color: @mainLight;
+
+        h3{
+            float: left;
+            width: calc(100% - 230px);
+            font-size: 35px;
+            line-height: 180px;
+            margin: 0;
+            padding-left: 30px;
+        }
+
+        .logo-holder{
+            background-color: @mainDark;
+            width: 200px;
+            height: 180px;
+            float: right;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .diagram-holder{
+        width: 65%;
+        margin: 0 auto;
+        min-height: 790px;
+
+        .diagram{
+            width: 100%;
+            min-height: 730px;
+            
+            .circle-progress{
+                width: 40%;
+            }
+        }
+
+        .diagram-text{
+            width: 200px;
+            background-color: @mainDark;
+            color: @mainOrange;
+            margin: 0 auto;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 35px;
+        }
+    }
+
+    .mark{
+        background-color: @mainDark;
+        color: @mainLight;
+        width: 190px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        transform: rotate(90deg);
+        position: absolute;
+        right: -63px;
+        bottom: 140px;
+    }
+
+
+}

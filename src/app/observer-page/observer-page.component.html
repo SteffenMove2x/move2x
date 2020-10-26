@@ -1,0 +1,45 @@
+<h3 class="title">OBSERVATOR VIEW</h3>
+<h3 class="stopwatch">{{stopwatchTime}}</h3>
+<div class="categoryNames">
+    <div class="nameHolder">
+        <p class="start cat">S</p>
+        <p class="name cat">#</p>
+        <p class="end cat">E</p>
+    </div>
+    <p class="expFinishTime cat">EXP.</p>
+    <p class="finishTime cat">FINISH T.</p>
+    <p class="pFails cat">P</p>
+    <p class="qFails cat">Q</p>
+</div>
+
+<div id="ordersDetails" (click)="exitOrdersDetails()">
+    <h3 id="detailsOrdersNumber"></h3>
+
+    <div id="detailsHeader">
+        <p class="productNumber detailsCat">Product #</p>
+        <p class="amount detailsCat">Amount</p>
+        <p class="bottom detailsCat">Bottom</p>
+        <p class="cover detailsCat">Cover</p>
+        <p class="fuse detailsCat">Fuse</p>
+        <p class="productImage detailsCat">Image</p>
+    </div>
+
+<div *ngFor="let product of products" class="productOverview">
+    <p class="productNumberProduct pCat">{{product.id}}</p>
+    <p class="amountProduct pCat">{{product.amount}}</p>
+    <p class="bottomProduct pCat">{{product.bottom}}</p>
+    <p class="coverProduct pCat">{{product.cover}}</p>
+    <p class="fuseProduct pCat">{{product.fuse}}</p>
+    <p class="productImageProduct pCat"><img class="insideProductImage" src="../../assets/images/{{product.id}}.png" alt="image {{product.id}}"></p>
+</div>
+
+</div>
+
+<app-observer-item
+*ngFor="let item of orderss"
+[orders]="item"
+[isPaused]="timerIsPaused"
+(updateOrdersList)='updateOrdersList()'
+(openOrdersDetails)="openOrdersDetails($event)"
+></app-observer-item>
+

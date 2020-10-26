@@ -1,0 +1,71 @@
+<div class="left-content">
+    <div class="mesure-lines">
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line">150</div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line">100</div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line">50</div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+        <div class="mesure-line"></div>
+
+        <div class="mesure-bar" id="mesure-bar">
+            <div class="mesure-bar-count" id="mesure-bar-count">
+                {{currentScore}}
+            </div>
+        </div>
+    </div>
+    
+    <div class="score-text">
+        Score
+    </div>
+
+</div>
+<div class="right-content">
+    <div class="top-bar">
+        <h3>AWARENESS GAME > INDUSTRY 4.0</h3>
+        <div class="logo-holder">
+            <img src="../../assets/images/logo.png" alt="Move2x Logo">
+        </div>
+    </div>
+    <div class="diagram-holder">
+        <div class="diagram">
+
+            <circle-progress
+                class="circle-progress"
+                id="circle-progress"
+                [percent]="percentageScore"
+                [radius]="250"
+                [outerStrokeWidth]="70"
+                [innerStrokeWidth]="70"
+                [space]="-70"
+                [outerStrokeColor]="'#E6523B'"
+                [innerStrokeColor]="'#1F2529'"
+                [animation]="true"
+                [animationDuration]="500"
+                [showSubtitle]="false"
+                [responsive]="true"
+                [titleFontSize]="90"
+                [unitsFontSize]="90"
+            ></circle-progress>
+
+        </div>
+        <div class="diagram-text">
+            Efficiency
+        </div>
+    </div>
+    <div class="mark">
+        PLAY TO INNOVATE_
+    </div>
+</div>

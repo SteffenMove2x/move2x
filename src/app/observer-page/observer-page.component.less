@@ -1,0 +1,221 @@
+@mainDark: #1F2529;
+@mainWhite: white;
+@mainLight: #e7e7e7;
+@mainOrange: #E6523B;
+
+
+.title{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 70%;
+    float: left;
+    line-height: 80px;
+    text-align: center;
+    background-color: @mainLight;
+
+}
+
+.stopwatch{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 30%;
+    float: left;
+    line-height: 80px;
+    text-align: center;
+    background-color: @mainLight;
+
+}
+
+.categoryNames{
+
+    float: left;
+    width: 100%;
+    height: 80px;
+
+    .cat{
+        background-color: @mainDark;
+        color: @mainOrange;
+        text-align: center;
+        line-height: 80px;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        float: left;
+    }
+
+    .nameHolder{
+        width: 30%;
+        float: left;
+
+        .start{
+            width: calc(30% - 5px);
+            margin-right: 5px;
+        }
+        
+        .name{
+            width: calc(40% - 5px);
+            margin-right: 5px;
+        }
+        
+        .end{
+            width: calc(30% - 5px);
+            margin-right: 5px;
+        }
+    }
+
+    .expFinishTime{
+        width: calc(20% - 5px);
+        margin-right: 5px;
+    }
+    
+    .finishTime{
+        width: calc(20% - 5px);
+        margin-right: 5px;
+    }
+    
+    .pFails{
+        width: calc(15% - 2.5px);
+        margin-right: 5px;
+    }
+    
+    .qFails{
+        width: calc(15% - 2.5px);
+    }
+}
+
+
+#ordersDetails{
+    background-color: @mainLight;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    overflow: hidden;
+    z-index: 50;
+    transition: height 1s;
+
+    button{
+        float: right;
+    }
+}
+
+#detailsOrdersNumber{
+    width: 100%;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: @mainDark;
+    color: @mainOrange;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 0;
+
+}
+
+#detailsHeader{
+
+    float: left;
+    width: 100%;
+    height: 80px;
+
+    .detailsCat{
+        background-color: @mainDark;
+        color: @mainOrange;
+        text-align: center;
+        line-height: 80px;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        float: left;
+    }
+
+    .productNumber{
+        width: calc(17% - 5px);
+        margin-right: 5px;
+    }
+
+    .amount{
+        width: calc(13% - 5px);
+        margin-right: 5px;
+    }
+
+    .bottom{
+        width: calc(13% - 5px);
+        margin-right: 5px;
+    }
+
+    .cover{
+        width: calc(13% - 5px);
+        margin-right: 5px;
+    }
+
+    .fuse{
+        width: calc(13% - 2.5px);
+        margin-right: 5px;
+    }
+
+    .productImage{
+        width: calc(31% - 2.5px);
+    }
+}
+
+.productOverview{
+    float: left;
+    width: 100%;
+    height: 120px;
+
+    .pCat{
+        text-align: center;
+        line-height: 120px;
+        margin: 0;
+        padding: 0;
+        float: left; 
+        background-color: #d8d8d8;
+    }
+
+    .productNumberProduct{
+        width: calc(17% - 5px);
+        margin-right: 5px;
+    }
+
+    .amountProduct{
+        width: calc(13% - 5px);
+        margin-right: 5px;
+    }
+
+    .bottomProduct{
+        width: calc(13% - 5px);
+        margin-right: 5px;
+    }
+
+    .coverProduct{
+        width: calc(13% - 5px);
+        margin-right: 5px;
+    }
+
+    .fuseProduct{
+        width: calc(13% - 2.5px);
+        margin-right: 5px;
+    }
+
+    .productImageProduct{
+        width: calc(31% - 2.5px);
+
+        .insideProductImage{
+            position: relative;
+            max-width: 100%;
+            width: 250px;
+            height: 83.5px;
+            top: 33px;
+            margin-top: -18px;
+            
+        }
+    }
+}

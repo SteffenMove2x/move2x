@@ -1,0 +1,25 @@
+<h3 class="title">SETUP VIEW</h3>
+
+<p class="setupTitle">Add new team:</p>
+<p id="infoText">Info text</p>
+
+<div class="addTeam">
+    <div class="teamTitle">
+        <p class="addTeamTitle">Choose name:</p>
+        <input type="text" id="teamInput"> 
+    </div>
+    
+
+    <!-- <button id="returnIDs" (click)="returnIDs()">returnIDs</button> -->
+
+    <div class="presets">
+        <p class="presetTitle">Pick preset:</p>
+        <p>Awareness Game: <input class="cb" id="firstCheck" (change)="cbChange($event.target)" type="checkbox"></p>
+        <p>None: <input class="cb" id="secondCheck" (change)="cbChange($event.target)" type="checkbox"></p>
+    </div>
+    
+    <button id="teamButton" (click)="addTeamToDatabase()">ADD TEAM</button>
+</div>
+
+
+

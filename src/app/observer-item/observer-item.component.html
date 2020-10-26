@@ -1,0 +1,23 @@
+<div class="itemHolder">
+    
+<div class="itemName" ><input type="checkbox" class="startCheck" id="startCheck" (click)="startTimeForOrders($event,orders)" [checked]="orders.isStarted" [disabled]="orders.isEnded || isPaused"> <p (click)="openUpOrders(orders)">{{orders.name}}</p>  <input type="checkbox" class="endCheck" (click)="endTimeForOrders($event,orders)" [checked]="orders.isEnded" [disabled]="orders.isEnded || isPaused || orders.isStarted == false"></div>
+    
+<p class="finishTime">
+    {{orders.expFinishTime}}
+</p>
+
+<p class="finishTime">
+    {{orders.finishTime}}
+</p>
+
+<div class="failHolder processFailHolder">
+    <p class="fail">{{orders.pFail}}</p>
+    <button class="failButton" (click)="addOneProcessFail(orders)" [disabled]="orders.isStarted == false || isPaused">+</button>
+</div>
+
+<div class="failHolder">
+    <p class="fail">{{orders.qFail}}</p>
+    <button class="failButton" (click)="addOneQualityFail(orders)" [disabled]="orders.isStarted == false || isPaused">+</button>
+</div>
+
+</div>
